@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Hiển thị tuổi</title>
+    <script>
+        function hienThiTuoi() {
+            var tuoi = document.getElementById("tuoi").value;
+            var ketQua = "Tuổi của bạn là: " + tuoi;
+            document.getElementById("ket-qua").innerHTML = ketQua;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Nhập tuổi của bạn:</p>
+    <input type="number" id="tuoi">
+    <button onclick="hienThiTuoi()">Hiển thị</button>
+    <p id="ket-qua"></p>
+</body>
+
+</html>
